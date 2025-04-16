@@ -16,16 +16,23 @@
     ---
     
     #### 📌 Create `.crt` File (Full Chain without Private Key)
-    
-    Use the following command to combine your domain certificate with the intermediate and root certificates:
-    
-    ```bash
-    cat STAR_example_com.crt \
-        SectigoRSADomainValidationSecureServerCA.crt \
-        USERTrustRSACertificationAuthorityCARoot.crt > example_com.crt
-    ```
-    
-    This `.crt` file is typically used in Apache or Nginx, along with your private key.
+  
+    - Using Bash Command (cat) — Recommended
+  
+        Use the following command to combine your domain certificate with the intermediate and root certificates:
+        
+        ```bash
+        cat STAR_example_com.crt \
+            SectigoRSADomainValidationSecureServerCA.crt \
+            USERTrustRSACertificationAuthorityCARoot.crt > example_com.crt
+        ```
+    - Manual Copying (e.g., with nano, vim, or cp)
+
+        - You paste the blocks properly (no extra spaces or characters)
+        - You respect the correct order and CRT and PEM format
+
+
+    This `.crt` file is typically used in `Apache` or `Nginx`, along with your private key.
     
     ---
     
@@ -46,8 +53,8 @@
     
     #### 🧪 Verify the Certificate Using OpenSSL
 
-To check that the certificate chain is correctly formed:
-
-```bash
-openssl s_client -connect example.com:443
-```
+    To check that the certificate chain is correctly formed:
+    
+    ```bash
+    openssl s_client -connect example.com:443
+    ```
