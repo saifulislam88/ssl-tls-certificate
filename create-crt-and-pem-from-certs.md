@@ -17,7 +17,7 @@
     
     #### 📌 Create `.crt` File (Full Chain without Private Key)
   
-    - Using Bash Command (cat) — Recommended
+    - 🔴 **Using Bash Command (cat) — Recommended**
   
         Use the following command to combine your domain certificate with the intermediate and root certificates:
         
@@ -26,7 +26,7 @@
             SectigoRSADomainValidationSecureServerCA.crt \
             USERTrustRSACertificationAuthorityCARoot.crt > example_com.crt
         ```
-    - Manual Copying (e.g., with nano, vim, or cp)
+    - 🔴 **Manual Copying (e.g., with nano, vim, or cp)**
 
         - You paste the blocks properly (no extra spaces or characters)
         - You respect the correct order and CRT and PEM format
