@@ -11,5 +11,5 @@
 		 - Let's Encrypt
   	 - ZeroSSL
      - Cloudflare
-3. SSL Redirection\
+3. SSL Redirection
 4. Wildcard Cert
