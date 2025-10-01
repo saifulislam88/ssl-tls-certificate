@@ -1,4 +1,5 @@
 ### SSL/TLS Certificate Renewal – Challenge & Fix in Real World
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/076fc674-db09-4da7-9e43-fb8b1427b0c1" />
 
 SSL/TLS certificate management is often more complex than it looks. Beyond just purchasing and deploying, differences in certificate formats, CA bundles, and integration methods can lead to unexpected issues.
 
